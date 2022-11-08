@@ -71,6 +71,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>FCC1C441-F498-4491-8337-7FEC3B28E252</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>ACE8EFAB-4C15-4E8E-9094-082B648A8B44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Dorian Karter</string>
@@ -172,6 +185,37 @@ ruby search.rb $query</string>
 			<string>ACE8EFAB-4C15-4E8E-9094-082B648A8B44</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>33</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>[</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>FCC1C441-F498-4491-8337-7FEC3B28E252</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -294,9 +338,9 @@ ruby search.rb $query</string>
 		<key>ACE8EFAB-4C15-4E8E-9094-082B648A8B44</key>
 		<dict>
 			<key>xpos</key>
-			<real>70</real>
+			<real>220</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>240</real>
 		</dict>
 		<key>FAF9818E-DDD0-4BF8-A50A-F5BF37291DBF</key>
 		<dict>
@@ -304,6 +348,13 @@ ruby search.rb $query</string>
 			<real>620</real>
 			<key>ypos</key>
 			<real>255</real>
+		</dict>
+		<key>FCC1C441-F498-4491-8337-7FEC3B28E252</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>240</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

@@ -6,11 +6,15 @@ but for Markdown. :magic_wand:
 
 # Demo
 
-https://user-images.githubusercontent.com/551858/200477952-c942ebdb-4449-4022-b425-f22468cbc98e.mp4
+https://user-images.githubusercontent.com/551858/200488916-b185bc58-8d37-4e36-86cc-d6363d0e0328.mp4
 
 # Usage
 
-- type `ml <query>` for example to get the page for ASDF Version Manager: `ml asdf vm`
+Type `ml <query>` for example to get the page for ASDF Version Manager: `ml asdf vm`
+
+OR
+
+Use the hotkey <kbd>⌥</kbd> + <kbd>[</kbd> and type a query
 
 Then either:
 
@@ -23,7 +27,7 @@ Then either:
 # Prerequisites
 
 - Ruby :gem:
-- Alfred with Powerpack :tophat:
+- Alfred with PowerPack :tophat:
 
 # Installation
 
