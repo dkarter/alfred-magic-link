@@ -6,7 +6,7 @@ but for Markdown. :magic_wand:
 
 # Demo
 
-https://user-images.githubusercontent.com/551858/200473108-75a98674-a79c-4637-b480-e172d67bc630.mp4
+https://user-images.githubusercontent.com/551858/200477952-c942ebdb-4449-4022-b425-f22468cbc98e.mp4
 
 # Usage
 
