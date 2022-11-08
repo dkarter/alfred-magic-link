@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>net.dkarter.alfred.autolink</string>
+	<string>net.dkarter.alfred.magicLink</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>ACE8EFAB-4C15-4E8E-9094-082B648A8B44</key>
