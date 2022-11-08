@@ -41,5 +41,9 @@ Download the [latest release](https://github.com/dkarter/alfred-magic-link/relea
 
 This workflow is powered by [DuckDuckGo](https://duckduckgo.com).
 
+If you overuse it, DuckDuckGo may temporarily flag you as a bot, and the workflow
+will return no result. For most users and use cases that will not be an issue,
+but I encountered this issue when I was developing and doing some heavy testing.
+
 If you want to use this feature in your browser add a `!` to any DuckDuckGo
 search query `apple !`.
