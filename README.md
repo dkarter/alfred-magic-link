@@ -22,8 +22,8 @@ Then either:
 
 # Prerequisites
 
-- Ruby
-- Alfred with Powerpack
+- Ruby :gem:
+- Alfred with Powerpack :tophat:
 
 # Installation
 
@@ -31,4 +31,7 @@ Download the [latest release](https://github.com/dkarter/alfred-magic-link/relea
 
 # Notes
 
-This workflow is powered by DuckDuckGo
+This workflow is powered by [DuckDuckGo](https://duckduckgo.com).
+
+If you want to use this feature in your browser add a `!` to any DuckDuckGo
+search query `apple !`.
