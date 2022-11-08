@@ -8,6 +8,10 @@ but for Markdown. :magic_wand:
 
 https://user-images.githubusercontent.com/551858/200488916-b185bc58-8d37-4e36-86cc-d6363d0e0328.mp4
 
+Works in any app!
+
+https://user-images.githubusercontent.com/551858/200491514-03d953cf-ed81-447c-acb1-b0bc96660838.mp4
+
 # Usage
 
 Type `ml <query>` for example to get the page for ASDF Version Manager: `ml asdf vm`
