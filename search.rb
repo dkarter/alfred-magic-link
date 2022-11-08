@@ -26,7 +26,8 @@ result_url = CGI.unescape(res.body.match(/.+uddg=(.+)&rut=.+/).captures[0])
 # get the title
 title_resp = Net::HTTP.get_response(URI(result_url))
 title = if title_resp.is_a?(Net::HTTPSuccess)
-          title_resp.body.match(%r{<title>(.*)</title>}).captures[0]
+          # YUCKKKKKK!
+          title_resp.body.match(%r{<title>(.*)</title>})&.captures&.[](0) || query
         else
           query
         end
