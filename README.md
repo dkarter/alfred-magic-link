@@ -6,4 +6,4 @@ but for Markdown. :magic_wand:
 
 # Demo
 
-![](demo/demo.mp4)
+https://user-images.githubusercontent.com/551858/200473108-75a98674-a79c-4637-b480-e172d67bc630.mp4
