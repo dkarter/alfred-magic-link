@@ -6,7 +6,10 @@ require 'cgi'
 
 Encoding.default_external = Encoding::UTF_8
 
-# TODO: turn this into a class that runs itself at the bottom of the file
+# TODO:
+# - turn this into a class that runs itself at the bottom of the file
+# - handle errors in initial fetch
+# - clean up (potentially) brittle chaining e.g. res.body.match().captures[0]
 
 query = ARGV[0]
 
@@ -31,7 +34,7 @@ title = if title_resp.is_a?(Net::HTTPSuccess)
 out = {
   items: [
     {
-      title: title,
+      title: title.force_encoding('UTF-8'),
       subtitle: result_url,
       arg: result_url,
       variables: {
@@ -41,7 +44,5 @@ out = {
     },
   ],
 }
-
-# puts out
 
 puts out.to_json
