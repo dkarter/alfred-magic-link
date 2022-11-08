@@ -8,6 +8,27 @@ but for Markdown. :magic_wand:
 
 https://user-images.githubusercontent.com/551858/200473108-75a98674-a79c-4637-b480-e172d67bc630.mp4
 
-## Installation
+# Usage
 
-Download the workflow from GitHub and open it.
+- type `ml <query>` for example to get the page for ASDF Version Manager: `ml asdf vm`
+
+Then either:
+
+- Press Enter to paste the markdown formatted link (+ copy it to clipboard)
+- Hold <key>⌥</key> + <key>Enter</key> to copy a Markdown formatted link
+- Hold <key>⌃</key> + <key>Enter</key> to copy the URL (no markdown)
+- Hold <key>⌃</key> + <key>⇧</key> + <key>Enter</key> to copy the URL (no markdown)
+- Hold <key>⌘</key> + <key>Enter</key> to open the URL
+
+# Prerequisites
+
+- Ruby
+- Alfred with Powerpack
+
+# Installation
+
+Download the [latest release](https://github.com/dkarter/alfred-magic-link/releases/latest) from GitHub and open it.
+
+# Notes
+
+This workflow is powered by DuckDuckGo

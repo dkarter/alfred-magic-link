@@ -12,11 +12,11 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>81E7966C-A07B-40FE-92F7-C31AF001BDA7</string>
+				<string>94425C5D-7C7D-4921-8F11-1F41C43BFC12</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Paste Markdown formatted link to frontmost app</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -26,7 +26,47 @@
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string>Copy Markdown Link</string>
+				<string>Copy Markdown formatted link</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>FAF9818E-DDD0-4BF8-A50A-F5BF37291DBF</string>
+				<key>modifiers</key>
+				<integer>655360</integer>
+				<key>modifiersubtext</key>
+				<string>Paste Markdown formatted link to frontmost app</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>34FE1415-26C1-44CF-BBFA-D7BFCE239035</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Copy the URL ONLY (no markdown)</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>45A00772-F5DD-46C8-A782-4B61C047E4BC</string>
+				<key>modifiers</key>
+				<integer>393216</integer>
+				<key>modifiersubtext</key>
+				<string>Paste the URL ONLY (no markdown) to frontmost app</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>81E7966C-A07B-40FE-92F7-C31AF001BDA7</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Open URL in default browser</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -45,44 +85,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>[{var:title}]({var:url})</string>
+				<key>ignoredynamicplaceholders</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
+				<key>transient</key>
 				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Website found and copied</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>0E40BC84-43FF-4D33-8143-8F41136E6995</string>
+			<string>94425C5D-7C7D-4921-8F11-1F41C43BFC12</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
+				<key>autopaste</key>
 				<false/>
-				<key>skipvarencode</key>
+				<key>clipboardtext</key>
+				<string>[{var:title}]({var:url})</string>
+				<key>ignoredynamicplaceholders</key>
 				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string></string>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>81E7966C-A07B-40FE-92F7-C31AF001BDA7</string>
+			<string>2057C504-2E03-4A37-95F8-567FA13F9B57</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -141,7 +177,7 @@ ruby search.rb $query</string>
 			<key>config</key>
 			<dict>
 				<key>autopaste</key>
-				<false/>
+				<true/>
 				<key>clipboardtext</key>
 				<string>[{var:title}]({var:url})</string>
 				<key>ignoredynamicplaceholders</key>
@@ -152,42 +188,122 @@ ruby search.rb $query</string>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>2057C504-2E03-4A37-95F8-567FA13F9B57</string>
+			<string>FAF9818E-DDD0-4BF8-A50A-F5BF37291DBF</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{var:url}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>34FE1415-26C1-44CF-BBFA-D7BFCE239035</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{var:url}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>45A00772-F5DD-46C8-A782-4B61C047E4BC</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>81E7966C-A07B-40FE-92F7-C31AF001BDA7</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>0E40BC84-43FF-4D33-8143-8F41136E6995</key>
-		<dict>
-			<key>xpos</key>
-			<real>770</real>
-			<key>ypos</key>
-			<real>105</real>
-		</dict>
 		<key>2057C504-2E03-4A37-95F8-567FA13F9B57</key>
 		<dict>
 			<key>xpos</key>
-			<real>610</real>
+			<real>625</real>
 			<key>ypos</key>
-			<real>390</real>
+			<real>135</real>
+		</dict>
+		<key>34FE1415-26C1-44CF-BBFA-D7BFCE239035</key>
+		<dict>
+			<key>xpos</key>
+			<real>620</real>
+			<key>ypos</key>
+			<real>365</real>
+		</dict>
+		<key>45A00772-F5DD-46C8-A782-4B61C047E4BC</key>
+		<dict>
+			<key>xpos</key>
+			<real>625</real>
+			<key>ypos</key>
+			<real>485</real>
 		</dict>
 		<key>81E7966C-A07B-40FE-92F7-C31AF001BDA7</key>
 		<dict>
 			<key>xpos</key>
-			<real>610</real>
+			<real>620</real>
 			<key>ypos</key>
-			<real>180</real>
+			<real>605</real>
+		</dict>
+		<key>94425C5D-7C7D-4921-8F11-1F41C43BFC12</key>
+		<dict>
+			<key>xpos</key>
+			<real>620</real>
+			<key>ypos</key>
+			<real>15</real>
 		</dict>
 		<key>ACE8EFAB-4C15-4E8E-9094-082B648A8B44</key>
 		<dict>
 			<key>xpos</key>
-			<real>110</real>
+			<real>70</real>
 			<key>ypos</key>
-			<real>230</real>
+			<real>225</real>
+		</dict>
+		<key>FAF9818E-DDD0-4BF8-A50A-F5BF37291DBF</key>
+		<dict>
+			<key>xpos</key>
+			<real>620</real>
+			<key>ypos</key>
+			<real>255</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
