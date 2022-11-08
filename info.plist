@@ -158,9 +158,9 @@ ruby search.rb $query</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>Automagically get a markdown link for your search query</string>
 				<key>title</key>
-				<string></string>
+				<string>Magic Link</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
