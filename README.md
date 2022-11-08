@@ -15,10 +15,10 @@ https://user-images.githubusercontent.com/551858/200473108-75a98674-a79c-4637-b4
 Then either:
 
 - Press Enter to paste the markdown formatted link (+ copy it to clipboard)
-- Hold <key>⌥</key> + <key>Enter</key> to copy a Markdown formatted link
-- Hold <key>⌃</key> + <key>Enter</key> to copy the URL (no markdown)
-- Hold <key>⌃</key> + <key>⇧</key> + <key>Enter</key> to copy the URL (no markdown)
-- Hold <key>⌘</key> + <key>Enter</key> to open the URL
+- Hold <kbd>⌥</kbd> + <kbd>Enter</kbd> to copy a Markdown formatted link
+- Hold <kbd>⌃</kbd> + <kbd>Enter</kbd> to copy the URL (no markdown)
+- Hold <kbd>⌃</kbd> + <kbd>⇧</kbd> + <kbd>Enter</kbd> to copy the URL (no markdown)
+- Hold <kbd>⌘</kbd> + <kbd>Enter</kbd> to open the URL
 
 # Prerequisites
 
