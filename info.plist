@@ -297,7 +297,57 @@ ruby search.rb $query</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># Alfred Magic Link Workflow
+
+https://github.com/dkarter/alfred-magic-link
+
+A magical workflow for copying a beautifully formatted Markdown link based on a
+single search query! It's like "I'm feeling lucky" feature in your search engine
+but for Markdown. :magic_wand:
+
+# Demo
+
+https://user-images.githubusercontent.com/551858/200488916-b185bc58-8d37-4e36-86cc-d6363d0e0328.mp4
+
+Works in any app!
+
+https://user-images.githubusercontent.com/551858/200491514-03d953cf-ed81-447c-acb1-b0bc96660838.mp4
+
+# Usage
+
+Type `ml &lt;query&gt;` for example to get the page for ASDF Version Manager: `ml asdf vm`
+
+OR
+
+Use the hotkey &lt;kbd&gt;⌥&lt;/kbd&gt; + &lt;kbd&gt;[&lt;/kbd&gt; and type a query
+
+Then either:
+
+- Press Enter to paste the markdown formatted link (+ copy it to clipboard)
+- Hold &lt;kbd&gt;⌥&lt;/kbd&gt; + &lt;kbd&gt;Enter&lt;/kbd&gt; to copy a Markdown formatted link
+- Hold &lt;kbd&gt;⌃&lt;/kbd&gt; + &lt;kbd&gt;Enter&lt;/kbd&gt; to copy the URL (no markdown)
+- Hold &lt;kbd&gt;⌃&lt;/kbd&gt; + &lt;kbd&gt;⇧&lt;/kbd&gt; + &lt;kbd&gt;Enter&lt;/kbd&gt; to copy the URL (no markdown)
+- Hold &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;Enter&lt;/kbd&gt; to open the URL
+
+# Prerequisites
+
+- Ruby :gem:
+- Alfred with PowerPack :tophat:
+
+# Installation
+
+Download the [latest release](https://github.com/dkarter/alfred-magic-link/releases/latest) from GitHub and open it.
+
+# Notes
+
+This workflow is powered by [DuckDuckGo](https://duckduckgo.com).
+
+If you overuse it, DuckDuckGo may temporarily flag you as a bot, and the workflow
+will return no result. For most users and use cases that will not be an issue,
+but I encountered this issue when I was developing and doing some heavy testing.
+
+If you want to use this feature in your browser add a `!` to any DuckDuckGo
+search query `apple !`.</string>
 	<key>uidata</key>
 	<dict>
 		<key>2057C504-2E03-4A37-95F8-567FA13F9B57</key>
@@ -359,6 +409,8 @@ ruby search.rb $query</string>
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
+	<key>version</key>
+	<string>1.3.2</string>
 	<key>webaddress</key>
 	<string>https://doriankarter.com</string>
 </dict>
