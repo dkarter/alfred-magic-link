@@ -33,7 +33,7 @@ title = if title_resp.is_a?(Net::HTTPSuccess)
 out = {
   items: [
     {
-      title: title.force_encoding('UTF-8'),
+      title: title.dup.force_encoding('UTF-8'),
       subtitle: result_url,
       arg: result_url,
       variables: {
