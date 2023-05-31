@@ -37,7 +37,7 @@ out = {
       subtitle: result_url,
       arg: result_url,
       variables: {
-        title: title,
+        title: title.dup.force_encoding('UTF-8'),
         url: result_url,
       },
     },
