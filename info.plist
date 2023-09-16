@@ -8,6 +8,19 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>3CAD21EC-5011-4F42-89B4-437BA3AEEC9F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>ACE8EFAB-4C15-4E8E-9094-082B648A8B44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>ACE8EFAB-4C15-4E8E-9094-082B648A8B44</key>
 		<array>
 			<dict>
@@ -37,6 +50,16 @@
 				<integer>655360</integer>
 				<key>modifiersubtext</key>
 				<string>Paste Markdown formatted link to frontmost app</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>879CC516-0A6E-4BD9-A8E2-76EAF9AC8B63</string>
+				<key>modifiers</key>
+				<integer>1572864</integer>
+				<key>modifiersubtext</key>
+				<string>Paste as markdown link and use search string as title</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -240,6 +263,46 @@ ruby search.rb $query</string>
 			<key>config</key>
 			<dict>
 				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>[{var:original_query}]({var:url})</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>879CC516-0A6E-4BD9-A8E2-76EAF9AC8B63</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Convert To Magic Link</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>3CAD21EC-5011-4F42-89B4-437BA3AEEC9F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
 				<string>{var:url}</string>
@@ -362,21 +425,35 @@ search query `apple !`.</string>
 			<key>xpos</key>
 			<real>620</real>
 			<key>ypos</key>
-			<real>365</real>
+			<real>515</real>
+		</dict>
+		<key>3CAD21EC-5011-4F42-89B4-437BA3AEEC9F</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>460</real>
 		</dict>
 		<key>45A00772-F5DD-46C8-A782-4B61C047E4BC</key>
 		<dict>
 			<key>xpos</key>
 			<real>625</real>
 			<key>ypos</key>
-			<real>485</real>
+			<real>635</real>
 		</dict>
 		<key>81E7966C-A07B-40FE-92F7-C31AF001BDA7</key>
 		<dict>
 			<key>xpos</key>
 			<real>620</real>
 			<key>ypos</key>
-			<real>605</real>
+			<real>755</real>
+		</dict>
+		<key>879CC516-0A6E-4BD9-A8E2-76EAF9AC8B63</key>
+		<dict>
+			<key>xpos</key>
+			<real>630</real>
+			<key>ypos</key>
+			<real>385</real>
 		</dict>
 		<key>94425C5D-7C7D-4921-8F11-1F41C43BFC12</key>
 		<dict>
@@ -410,7 +487,7 @@ search query `apple !`.</string>
 	<key>userconfigurationconfig</key>
 	<array/>
 	<key>version</key>
-	<string>1.3.2</string>
+	<string>1.3.4</string>
 	<key>webaddress</key>
 	<string>https://doriankarter.com</string>
 </dict>

@@ -39,6 +39,7 @@ out = {
       variables: {
         title: title.dup.force_encoding('UTF-8'),
         url: result_url,
+        original_query: query,
       },
     },
   ],
