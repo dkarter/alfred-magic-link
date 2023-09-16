@@ -47,3 +47,11 @@ but I encountered this issue when I was developing and doing some heavy testing.
 
 If you want to use this feature in your browser add a `!` to any DuckDuckGo
 search query `apple !`.
+
+# Release Instructions
+
+1. Update the version in the "About This Workflow" section
+2. Commit everything
+3. Create a tag `git tag v1.x.x`
+4. Push commits and tag
+5. Workflow will be built and released automatically
